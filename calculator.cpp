@@ -9,9 +9,6 @@ Calculator::Calculator(QWidget *parent) :
     f1 = new Fraction;
     f2 = new Fraction;
     fres= new Fraction;
-    f1->setdisplay(ui->displayer);
-    f2->setdisplay(ui->displayer);
-    fres->setdisplay(ui->displayer);
     ui->resultDenom->setReadOnly(1);
     ui->resultNum->setReadOnly(1);
     ui->firstNum->setMinimum(1);
@@ -96,13 +93,10 @@ void Calculator::plus()
     f2->denomenator = ui->secondDenom->value();
     f1->fshort();
     f2->fshort();
-    f1->display();
-    f2->display();
 if((f1->denomenator % f2->denomenator == 0)&&(f1->denomenator != f2->denomenator))
 {
  int reserve = f1->denomenator / f2->denomenator;
 f2->m(reserve);
-f2->display();
 }
 else
 {
@@ -176,7 +170,6 @@ void Calculator::minus()
     {
      int reserve = f1->denomenator / f2->denomenator;
     f2->m(reserve);
-    f2->display();
     }
     else
     {

@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>856</width>
+    <width>454</width>
     <height>260</height>
    </rect>
   </property>
@@ -149,16 +149,6 @@
       <y>30</y>
       <width>51</width>
       <height>22</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QTextEdit" name="displayer">
-    <property name="geometry">
-     <rect>
-      <x>530</x>
-      <y>30</y>
-      <width>301</width>
-      <height>221</height>
      </rect>
     </property>
    </widget>

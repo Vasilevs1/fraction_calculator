@@ -10,18 +10,6 @@ Fraction::Fraction()
     numerator=0;
     denomenator=0;
 }
-
-void Fraction::setdisplay(QTextEdit *a)
-{
-  d=a;
-}
-
-void Fraction::display()
-{
-    d->append(QString::number(numerator)+" "+ QString::number(denomenator));
-}
-
-
 void Fraction::fshort()
 {
     int i=1;
